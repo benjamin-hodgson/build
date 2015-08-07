@@ -64,7 +64,7 @@ class Builder:
         return dict(pairs)
 
 
-def evaluate_callables(data, cls=dict):
+def evaluate_callables(data):
     """
     Call any callable values in the input dictionary;
     return a new dictionary containing the evaluated results.
@@ -75,4 +75,5 @@ def evaluate_callables(data, cls=dict):
     >>> result == {'eggs': 123, 'spam': 'ham'}
     True
     """
-    return cls([(k, v() if callable(v) else v) for k, v in data.items()])
+    sequence = ((k, v() if callable(v) else v) for k, v in data.items())
+    return type(data)(sequence)

@@ -18,6 +18,8 @@ Example
 -------
 
 ```python
+from build import Builder
+
 class MyBuilder(Builder):
     # declare the defaults for the builder
     defaults = [

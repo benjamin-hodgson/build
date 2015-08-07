@@ -63,6 +63,7 @@ def evaluate_callables(data):
     """
     Call any callable values in the input dictionary;
     return a new dictionary containing the evaluated results.
+    Useful for lazily evaluating default values in ``build`` methods.
 
     >>> data = {"spam": "ham", "eggs": (lambda: 123)}
     >>> result = evaluate_callables(data)

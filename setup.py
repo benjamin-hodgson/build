@@ -9,7 +9,7 @@ except ImportError:
 
 setup(
     name='build',
-    version='1.0',
+    version='1.0.1',
     author="Benjamin Hodgson",
     author_email="benjamin.hodgson@huddle.net",
     url="https://github.com/benjamin-hodgson/build",

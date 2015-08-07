@@ -34,8 +34,6 @@ class Builder:
     True
     """
 
-    dict = dict
-
     def __init__(self):
         self.data = self.dict(self.defaults)
 
@@ -57,6 +55,13 @@ class Builder:
         _with.__name__ = name
 
         return _with
+
+    def dict(self, pairs):
+        """
+        Override me if you want to use a custom :class:`dict`
+        subclass for ``self.data``.
+        """
+        return dict(pairs)
 
 
 def evaluate_callables(data):

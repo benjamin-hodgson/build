@@ -3,6 +3,7 @@
 
 [![Build Status](https://travis-ci.org/benjamin-hodgson/build.svg?branch=master)](https://travis-ci.org/benjamin-hodgson/build)
 [![Documentation Status](https://readthedocs.org/projects/build/badge/?version=v1.0.1)](https://readthedocs.org/projects/build/?badge=v1.0.1)
+[![Requirements Status](https://requires.io/github/benjamin-hodgson/build/requirements.svg?branch=master)](https://requires.io/github/benjamin-hodgson/build/requirements/?branch=master)
 
 A tiny base class for fluent builders, harvested from Huddle's test code.
 

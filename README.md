@@ -1,3 +1,8 @@
+I'm not maintaining this, and it has been removed from PyPI. It's only one file. You're welcome to copy it
+==========================================================================================================
+
+
+
 `build`
 =======
 
